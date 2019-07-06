@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" type="image/png" href="images/icons/logo.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta http-equiv="Content-Language" content="vi">
+        <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true">     
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/disable-copy.js"></script> -->
+        <title>Marshmello</title>
+    </head>
+    <body>
+        <!--A Begin box header-->
+        <div class="box-header" id="header">
+            <div class="wrap">
+                <div class="content-wrap">
+                    <a class="logo" href="index.html"></a>
+                    <div class="menu-subdomain">
+                        <a href="index.html" class="active">MUSIC</a>
+                        <a href="videos.html" target="_blank">VIDEO</a>
+                    </div>
+                      <div id="box_search_quick" class="box_search">
+                        <div class="bg-top-noel"></div>
+                        <form id="formSearchQuick" method="GET" action="tim-kiem" onsubmit="return NCTQuickSearch.buttonSearchProcess();">
+                            <input id="txtSearch" maxlength="45" name="q" type="text" class="i-search" value="" rel="Tìm bài hát, video, playlist, ca sĩ" autocomplete="off">                    
+                            <input id="btnSearch" type="submit" class="b-search" value="SEARCH">
+                            <div class="list-keyword" id="divHotKeyword">                            
+                            </div>
+                        </form>
+                        <div id="divSuggestion" class="hideShowCase suggestion" m="0">                        
+                            <div style="float:left; width:346px; max-height: 450px;">
+                                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 0px;"><div id="idScrllSuggestion" style="overflow: hidden; width: auto; height: 0px;">
+                                    <ul id="contentSuggestion" class="content_search" style="text-transform:capitalize;"></ul>
+                                </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="follow">
+						<a href="https://www.youtube.com/channel/UCf0SS3m2zdRtfaAgnr5kIBw/?sub_confirmation=1">
+							<img src="images/icons/youtube.png" alt="">
+						</a>
+						<a href="http://123link.pw/WV3BLpxl">
+							<img src="images/icons/facebook.png" alt="">
+						</a>
+						<a href="http://123link.pw/EKl2z">
+							<img src="images/icons/google.png" alt="">
+						</a>
+						<a href="http://123link.pw/qaXD0FW">
+							<img src="images/icons/blogger.png" alt="">
+						</a>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!--End box header-->
+
+        <!--A Begin sub-menu-header-->
+        <div id="submenu" class="sub-menu-header">
+            <div class="wrap">
+                <div class="content-wrap">
+                    <!--A Begin sub-menu-top-->   
+                    <div class="menu-top">
+                        <ul class="notifi" id="menuTop">
+                            <li class="icon_logo_menu" id="icon_menu_logo">
+                                <a href="index.html" title="Home" class="active">Home</a>
+                            </li>
+                            
+                            <li>                                
+                                <a href="songs.html" title="Songs">Songs</a>
+                            </li>
+                            
+                            <li>
+                                <a rel="follow" href="genres.html" title="Genres">Genres</a>
+                            </li>
+                            
+                            <li>
+                                <a rel="follow" href="singers.html" title="Singer">Singers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End sub-menu-top-->
+
+                </div>
+            </div>
+        </div>
+        <!--End sub-menu-header-->
+
+        <div class="singer-top-cover">
+            <div class="bg-singer-cover" style="background:url(https://avatar-nct.nixcdn.com/singer/cover/2016/07/20/1/6/d/3/1468980754799.jpg)"></div>
+            <div class="wrap">
+                <div class="content-wrap">
+                    <div class="singer-left-avatar">
+                        <div class="singer-avatar">
+                            <img src="images/singers/Marshmello.jpg">
+                        </div>
+                        <h1 class="singer-name" style="text-overflow:ellipsis;overflow: hidden;white-space:nowrap">Marshmello</h1>
+                        <p>Tên thật: Marshmello</p>
+                        
+                        <p>Giới tính: Nam</p>
+                        <p>Quốc gia: United States</p>
+                    </div>
+                    <div class="singer-right-cover"><img src="images/singers/Marshmello-Banner.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <!--A Begin box content-->
+        <div class="box-content">
+                <div class="wrap">
+                    <div class="content-wrap">
+                        <div class="box-left">  
+                            
+                            <div class="singer_profile" style="margin-bottom: 0px; overflow: hidden; height: auto;">
+                                <div class="fram_select">
+                                    <div class="tile_box_key">
+                                        <h2><a title="Tiểu sử">Tiểu sử</a></h2>
+                                    </div><!--@end div tile_box_key-->
+                                    <div class="singer_profile_content">
+                                        <div style="line-height: 1.5" id="divDescription" class="">
+                                            <p>Nhắc đến Marshmello là nhắc đến hàng loạt những sản phẩm âm nhạc tuy mới nhưng cực kì chất lượng được ra mắt chỉ từ một năm trước. Sau khi single đầu tiên WaVez và một loạt hit nối tiếp FinD Me, BlocKs, WaNt U 2… được công bố, Marshmello đã trở thành hiện tượng với dòng nhạc Trap đậm nét “quyến rũ mượt mà và có chiều sâu”.<br> Theo như một số nguồn tin góp nhặt, Marshmello chính là một trong nhóm bốn nghệ sĩ Kayliox, Dotcom, Sikdope và Jauz dưới quyền của quản lí Moe Shalizi, nhưng cho đến giờ thông tin chính thức vẫn là con số 0 và anh chàng vẫn xuất hiện trên sân khấu với chiếc mặt nạ viên kẹo marshmallow quen thuộc.</p>
+                                        </div>
+            <!--                            <div style="line-height: 1.5" id="shortDescription">
+                                            
+                                        </div>-->
+            <!--                            <a style="color:#0689ba; margin-top: 10px;" href="javascript:;" id="seeMoreDescription" title="Xem toàn bộ" class="btn_view_more hide">Xem toàn bộ<span class="down"></span></a>
+                                        <a style="color:#0689ba; margin-top: 10px;" href="javascript:;" id="hideMoreDescription" title="Thu gọn" class="btn_view_hide hide">Thu gọn<span class="up"></span></a>-->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_album" style="font-size: 14px; background: #fff; margin-bottom: 0px; padding-bottom: 10px;">
+                                <span id="dotedDetail"></span>
+                                <a style="color:#0689ba; margin-top: 10px;" href="javascript:;" id="seeMoreDescription" title="Xem toàn bộ" class="btn_view_more hide">Xem toàn bộ<span class="down"></span></a>
+                                <a style="color:#0689ba; margin-top: 10px;" href="javascript:;" id="hideMoreDescription" title="Thu gọn" class="btn_view_hide">Thu gọn<span class="up"></span></a>
+                            </div>
+                            <script type="text/javascript">
+                                var html = $.trim($("#divDescription").html());
+                                $("div[id*='hiddenLyricHtml']").remove();
+                                $('<div id="hiddenLyricHtml" class="pd_lyric" style="display:none;width:618px;">' + html + '</div>').appendTo('body');
+                                if ($("#divDescription").height() > 65) {
+                                    $(".singer_profile").css({"height":"110px"});
+                                    $("#seeMoreDescription").removeClass("hide");
+                                    $("#hideMoreDescription").addClass("hide");
+                                } else {
+                                    $("#seeMoreDescription").addClass("hide");
+                                    $("#hideMoreDescription").addClass("hide");
+                                    $("#dotedDetail").html("");
+                                }
+                                $("#seeMoreDescription").unbind().click(function () {
+                                     $(".singer_profile").css({"height":"auto"});
+                                     $("#seeMoreDescription").addClass("hide");
+                                     $("#hideMoreDescription").removeClass("hide");
+                                     $("#dotedDetail").html("");
+                                });
+                                $("#hideMoreDescription").unbind().click(function () {
+                                    $(".singer_profile").css({"height":"110px"});
+                                    $("#seeMoreDescription").removeClass("hide");
+                                    $("#hideMoreDescription").addClass("hide");
+                                    $("#dotedDetail").html("(...)");
+                                });
+                            </script>
+                            
+                            
+                            
+                            <div class="list_video" style="background: #fff">
+                                <div class="fram_select">
+                                    
+                                    <div class="tile_box_key">
+                                        <h2><a title="Video" href="videos.html" >Videos</a></h2>                  
+                                    </div>
+                                    
+                                
+                                    <ul>
+                                        
+                                        <li class="videosmall">
+                                            <div class="box_absolute">                    		
+                                                <a href="Hailee-Steinfeld,-Alesso---Let-Me-GoV.html" title="Hailee Steinfeld, Alesso_Let-Me-Go" class="img" >
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_5508556" wgct="1">61</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="images/videos/small/Hailee-Steinfeld,-Alesso---Let-Me-Go.jpg" title="Hailee Steinfeld, Alesso_Let-Me-Go">
+                                                </a>
+                                                <span class="icon_time_video">02:55</span>
+                                            </div>
+                                            <h3><a href="Hailee-Steinfeld,-Alesso---Let-Me-GoV.html" title="Hailee Steinfeld, Alesso_Let-Me-Go" class="name_song_index">Let Me Go</a></h3>
+                                            <h4><a href="Hailee-Steinfeld.html" class="name_singer" title="Hailee Steinfeld" target="_blank">Hailee Steinfeld</a>, <a href="Alesso.html" class="name_singer" title="Alesso" target="_blank">Alesso</a></h4>
+                                        </li>
+                                        
+                                        <li class="videosmall">
+                                            <div class="box_absolute">                    		
+                                                <a href="Ina Wroldsen_Strongest (Alan Walker_ Remix)V.html" title="Ina-Wroldsen---Strongest-(Alan-Walker-Remix)" class="img" >
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_5508556" wgct="1">91</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="images/videos/small/Ina-Wroldsen---Strongest-(Alan-Walker-Remix).jpg" title="Ina-Wroldsen---Strongest-(Alan-Walker-Remix)">
+                                                </a>
+                                                <span class="icon_time_video">03:31</span>
+                                            </div>
+                                            <h3><a href="Ina Wroldsen_Strongest (Alan Walker_ Remix)V.html" title="Ina-Wroldsen---Strongest-(Alan-Walker-Remix)" class="name_song_index">Strongest</a></h3>
+                                            <h4><a href="Ina-Wroldsen.html" class="name_singer" title="Ina-Wroldsen" target="_blank">Ina-Wroldsen</a>, <a href="Alan-Walker.html" class="name_singer" title="Alan-Walker" target="_blank">Alan-Walker</a></h4>
+                                        </li>
+                                        
+                                        <li class="videosmall">
+                                            <div class="box_absolute">                    		
+                                                <a href="K-391-&-Alan-Walker---Ignite-feat--Julie-Bergan-&-SeungriV.html" title="K-391-&-Alan-Walker---Ignite-feat--Julie-Bergan-&-Seungri" class="img" >
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_5508556" wgct="1">84</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="images/videos/small/K-391-&-Alan-Walker---Ignite-feat--Julie-Bergan-&-Seungri.jpg" title="K-391-&-Alan-Walker---Ignite-feat--Julie-Bergan-&-Seungri">
+                                                </a>
+                                                <span class="icon_time_video">03:31</span>
+                                            </div>
+                                            <h3><a href="K-391-&-Alan-Walker---Ignite-feat--Julie-Bergan-&-SeungriV.html" title="K-391-&-Alan-Walker---Ignite-feat--Julie-Bergan-&-Seungri" class="name_song_index">Ignite</a></h3>
+                                            <h4><a href="K-391.html" class="name_singer" title="K-391" target="_blank">K-391</a>, <a href="Alan-Walker.html" class="name_singer" title="Alan-Walker" target="_blank">Alan-Walker</a></h4>
+                                        </li>
+                                        
+                                        <li class="videosmall">
+                                            <div class="box_absolute">                    		
+                                                <a href="Koni---No-OtherV.html" title="Koni---No-Other" class="img" >
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_5508556" wgct="1">87</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="images/videos/small/Koni---No-Other.jpg" title="Koni---No-Other">
+                                                </a>
+                                                <span class="icon_time_video">03:20</span>
+                                            </div>
+                                            <h3><a href="Koni---No-OtherV.html" title="Koni---No-Other" class="name_song_index">No-Other</a></h3>
+                                            <h4><a href="Koni.html" class="name_singer" title="Koni" target="_blank">Koni</a></h4>
+                                        </li>
+                                        
+                                        <li class="videosmall">
+                                            <div class="box_absolute">                    		
+                                                <a href="Martin-Jensen---Solo-DanceV.html" title="Martin-Jensen---Solo-Dance" class="img" >
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_5508556" wgct="1">62</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="images/videos/small/Martin-Jensen---Solo-Dance.jpg" title="Martin-Jensen---Solo-Dance">
+                                                </a>
+                                                <span class="icon_time_video">02:56</span>
+                                            </div>
+                                            <h3><a href="Martin-Jensen---Solo-DanceV.html" title="Martin-Jensen---Solo-Dance" class="name_song_index">Solo-Dance</a></h3>
+                                            <h4><a href="Martin-Jensen.html" class="name_singer" title="Martin-Jensen" target="_blank">Martin-Jensen</a></h4>
+                                        </li>
+                                        
+                                        <li class="videosmall">
+                                            <div class="box_absolute">                    		
+                                                <a href="Next-To-Me---Axel-Johansson-Tina-StachowiakV.html" title="Next-To-Me---Axel-Johansson-Tina-Stachowiak" class="img" >
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_5508556" wgct="1">66</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="images/videos/small/Next-To-Me---Axel-Johansson-Tina-Stachowiak.jpg" title="Next-To-Me---Axel-Johansson-Tina-Stachowiak">
+                                                </a>
+                                                <span class="icon_time_video">03:00</span>
+                                            </div>
+                                            <h3><a href="Next-To-Me---Axel-Johansson-Tina-StachowiakV.html" title="Next-To-Me---Axel-Johansson-Tina-Stachowiak" class="name_song_index">Next-To-Me</a></h3>
+                                            <h4><a href="Axel-Johansson.html" class="name_singer" title="Axel-Johansson" target="_blank">Axel-Johansson</a>, <a href="Tina-Stachowiak.html" class="name_singer" title="Tina-Stachowiak" target="_blank">Tina-Stachowiak</a></h4>
+                                        </li>
+                                        
+                                        <li class="videosmall">
+                                            <div class="box_absolute">                    		
+                                                <a href="The-Script---SuperheroesV.html" title="The-Script---Superheroes" class="img" >
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_5508556" wgct="1">82</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="images/videos/small/The-Script---Superheroes.jpg" title="The-Script---Superheroes">
+                                                </a>
+                                                <span class="icon_time_video">04:06</span>
+                                            </div>
+                                            <h3><a href="The-Script---SuperheroesV.html" title="The-Script---Superheroes" class="name_song_index">Superheroes</a></h3>
+                                            <h4><a href="The-Script.html" class="name_singer" title="The-Script" target="_blank">The-Script</a></h4>
+                                        </li>
+                                        
+                                        <li class="videosmall">
+                                            <div class="box_absolute">                    		
+                                                <a href="All-I-Wanna-Do---Martin-JensenV.html" title="All-I-Wanna-Do---Martin-Jensen" class="img" >
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_5508556" wgct="1">61</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="images/videos/small/All-I-Wanna-Do---Martin-Jensen.jpg" title="All-I-Wanna-Do---Martin-Jensen">
+                                                </a>
+                                                <span class="icon_time_video">03:15</span>
+                                            </div>
+                                            <h3><a href="All-I-Wanna-Do---Martin-JensenV.html" title="All-I-Wanna-Do---Martin-Jensen" class="name_song_index">All-I-Wanna-Do</a></h3>
+                                            <h4><a href="Martin-Jensen.html" class="name_singer" title="Martin-Jensen" target="_blank">Martin-Jensen</a></h4>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="list_music_full" style="background: #fff"> 
+                                
+                                <div class="tile_box_key">
+                                    <h2><a title="Songs" href="songs.html" class="nomore" >Songs</a><!--1h2-->
+                                </h2></div> 
+                                
+                                
+                                <ul class="list_item_music">
+                                    
+                                    <li>
+                                        <div class="item_content"><a href="Hailee-Steinfeld,-Alesso---Let-Me-Go.html" class="name_song">Let-Me-Go</a> - <a href="Hailee-Steinfeld.html" class="name_singer" title="Hailee-Steinfeld" target="_blank">Hailee-Steinfeld</a>, <a href="Alesso.html" class="name_singer" title="Alesso" target="_blank">Alesso</a></div>
+                                        <div class="list_mark">
+                                            <span class="icon-tag-hd" title="High Quality">HQ</span>
+                                        </div>
+                                        <span id="NCTCounter_sg_1012000" class="icon_listen" wgct="1">64</span>                                
+                                        <a href="Hailee-Steinfeld,-Alesso---Let-Me-Go.html"  target="_blank" class="button_new_window" title="Listen Hailee-Steinfeld,-Alesso---Let-Me-Go"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_ElSkJSmErd" class="button_add_playlist" title="Add Hailee-Steinfeld,-Alesso---Let-Me-Go to lyric"></a> </div>
+                                        <a href="Hailee-Steinfeld,-Alesso---Let-Me-Go.html" class="button_playing" title="Listen Hailee-Steinfeld,-Alesso---Let-Me-Go"></a>                
+                                    </li>
+
+                                    <li>
+                                        <div class="item_content"><a href="Just-Say-It---Fly-By-Midnight.html" class="name_song">Just-Say-It</a> - <a href="Fly-By-Midnight.html" class="name_singer" title="Fly-By-Midnight" target="_blank">Fly-By-Midnight</a></div>
+                                        <div class="list_mark">
+                                            <span class="icon-tag-hd" title="High Quality">HQ</span>
+                                        </div>
+                                        <span id="NCTCounter_sg_1012000" class="icon_listen" wgct="1">25</span>                                
+                                        <a href="Just-Say-It---Fly-By-Midnight.html"  target="_blank" class="button_new_window" title="Listen Just-Say-It---Fly-By-Midnight"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_ElSkJSmErd" class="button_add_playlist" title="Add Just-Say-It---Fly-By-Midnight to lyric"></a> </div>
+                                        <a href="Just-Say-It---Fly-By-Midnight.html" class="button_playing" title="Listen Just-Say-It---Fly-By-Midnight"></a>                
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item_content"><a href="Koni---No-Other.html" class="name_song">No-Other</a> - <a href="Koni.html" class="name_singer" title="Koni" target="_blank">Koni</a></div>
+                                        <div class="list_mark">
+                                            <span class="icon-tag-hd" title="High Quality">HQ</span>
+                                        </div>
+                                        <span id="NCTCounter_sg_1012000" class="icon_listen" wgct="1">100</span>                                
+                                        <a href="Koni---No-Other.html"  target="_blank" class="button_new_window" title="Listen Koni---No-Other"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_ElSkJSmErd" class="button_add_playlist" title="Add Koni---No-Other to lyric"></a> </div>
+                                        <a href="Koni---No-Other.html" class="button_playing" title="Listen Koni---No-Other"></a>                
+                                    </li>
+
+                                    <li>
+                                        <div class="item_content"><a href="Martin-Jensen---Solo-Dance.html" class="name_song">Solo-Dance</a> - <a href="Martin-Jensen.html" class="name_singer" title="Martin-Jensen" target="_blank">Martin-Jensen</a></div>
+                                        <div class="list_mark">
+                                            <span class="icon-tag-hd" title="High Quality">HQ</span>
+                                        </div>
+                                        <span id="NCTCounter_sg_1012000" class="icon_listen" wgct="1">100</span>                                
+                                        <a href="Martin-Jensen---Solo-Dance.html"  target="_blank" class="button_new_window" title="Listen Martin-Jensen---Solo-Dance"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_ElSkJSmErd" class="button_add_playlist" title="Add Martin-Jensen---Solo-Dance to lyric"></a> </div>
+                                        <a href="Martin-Jensen---Solo-Dance.html" class="button_playing" title="Listen Martin-Jensen---Solo-Dance"></a>                
+                                    </li>
+
+                                    <li>
+                                        <div class="item_content"><a href="Never-Give-Up---Sia.html" class="name_song">Never-Give-Up</a> - <a href="Sia.html" class="name_singer" title="Sia" target="_blank">Sia</a></div>
+                                        <div class="list_mark">
+                                            <span class="icon-tag-hd" title="High Quality">HQ</span>
+                                        </div>
+                                        <span id="NCTCounter_sg_1012000" class="icon_listen" wgct="1">100</span>                                
+                                        <a href="Never-Give-Up---Sia.html"  target="_blank" class="button_new_window" title="Listen Never-Give-Up---Sia"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_ElSkJSmErd" class="button_add_playlist" title="Add Never-Give-Up---Sia to lyric"></a> </div>
+                                        <a href="Never-Give-Up---Sia.html" class="button_playing" title="Listen Never-Give-Up---Sia"></a>                
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            
+                            
+                            <div class="clr"></div>
+                            
+                            
+                        </div>
+                        <div class="box-right">
+                            
+                            <div class="singer_playlist_new">
+                                <div class="tile_box_key">
+                                    <h3><a href="playlists.html" title="Playlist" class="nomore">Playlists</a></h3>  
+                                </div>
+                                
+                                <audio id="adPlayer" onended="NCTNowPlayingProfile.EndOfAudio()" ontimeupdate="NCTNowPlayingProfile.SeekBar()"></audio> 
+                                <div class="box_name_album_info">
+                                    <div class="info_album">
+                                        <div class="avatar_album">
+                                            <div class="rotate_album"><img src="images/playlists/marshmello.jpg" class="rotate" width="164"></div>
+                                            <span class="view_listen"><span class="icon_listen"></span><span id="NCTCounter_pl_55165564" wgct="1">111.552</span></span>
+                                            <a href="marshmelloplaylist.html" id="mainAlbum" class="box_font_album box_absolute">
+                                                <span class="icon_play_single_playlist"></span>
+                                            </a>
+                                            <div class="box_bg_album">
+                                                <a href="marshmelloplaylist.html" class="img_avatar"><img src="images/playlists/marshmello.jpg" class="img_album" width="180"></a>
+                                            </div>                	   
+                                        </div>  
+                                        <h3 style="font-size: 16px; margin-top: 10px; margin-bottom: 20px;"><a href="marshmelloplaylist.html">Joytime II</a></h3>                  	                               
+                                    </div> 
+                                </div>
+                                <div id="loadingBar" class="hide">
+                                    <div class="bg_line_status_loading">
+                                        <span class="line_status_loading_show" style="width:100%"></span>
+                                        <span class="line_status_loading_listen" id="seekBar"></span>
+                                    </div>
+                                </div>
+                                <div class="list_chart_music" style="border-top: 1px solid #f3f3f3; padding-top: 10px;">
+                                    <ul id="ulSingle">
+                                        
+                                        
+                                        <li id="itemSong_f99684aececfb519ee6b19e678b478ae">
+                                                <div class="info_data"><a title="Ignite - K-391, Alan Walker, Julie Bergan, Seung Ri (BIGBANG)" href="K-391-&-Alan-Walker---Ignite-feat--Julie-Bergan-&-Seungri.html" class="name_song">Ignite</a>
+                                                    <p class="list_name_singer"><a href="K-391.html" class="name_singer" title="K-391" target="_blank">K-391</a>, <a href="Alan-Walker.html" class="name_singer" title="Alan Walker" target="_blank">Alan Walker</a></p>
+                                                </div>
+                                                
+                                                <span id="NCTCounter_sg_5471683" class="icon_listen" wgct="1">1.136.190</span>
+                                                <div class="bg_line_status_loading" style="margin-top: 10px;">
+                                                </div>
+                                            </li>
+    
+                                            <li id="itemSong_f99684aececfb519ee6b19e678b478ae">
+                                                <div class="info_data"><a title="Ina Wroldsen_Strongest (Alan Walker Remix)" href="Ina Wroldsen_Strongest (Alan Walker_ Remix).html" class="name_song">Strongest</a>
+                                                    <p class="list_name_singer"><a href="Ina Wroldsen.html" class="name_singer" title="Ina Wroldsen" target="_blank">Ina Wroldsen</a>, <a href="Alan-Walker.html" class="name_singer" title="Alan Walker" target="_blank">Alan Walker</a></p>
+                                                </div>
+                                                
+                                                <span id="NCTCounter_sg_5471683" class="icon_listen" wgct="1">116.190</span>
+                                                <div class="bg_line_status_loading" style="margin-top: 10px;">
+                                                </div>
+                                            </li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            
+            
+                            <div class="list_singer_hot">
+                                <div class="tile_box_key">
+                                    <h3><a title="Singers" href="singers.html" >Singers</a></h3>                  
+                                </div><!--@end div tile_box_key-->
+                                <ul>
+                                    
+                                    <li><a href="Alan-Walker.html" class="img" title="Alan Walker"><img src="images/singers/Alan-Walker.jpg" title="alan walker" alt="alan walker"></a><a href="Alan-Walker.html" class="name_singer_main" title="alan walker">Alan Walker</a></li>
+                                
+                                    <li><a href="marshmello.html" class="img" title="Marshmello"><img src="images/singers/Marshmello.jpg" title="Marshmello" alt="marshmello"></a><a href="marshmello.html" class="name_singer_main" title="Marshmello">Marshmello</a></li>
+                                
+                                    <li><a href="Martin Jensen.html" class="img" title="Martin Jensen"><img src="images/singers/Martin-Jensen.jpg" title="Martin Jensen" alt="Martin Jensen"></a><a href="Martin Jensen.html" class="name_singer_main" title="Martin Jensen">Martin Jensen</a></li>
+                                
+                                    <li><a href="Culture Code.html" class="img" title="Culture Code"><img src="images/singers/Culture-Code.jpg" title="Culture Code" alt="Culture Code"></a><a href="Culture Code.html" class="name_singer_main" title="Culture Code">Culture Code</a></li>
+                                
+                                    <li><a href="Hailee Steinfeld.html" class="img" title="Hailee Steinfeld"><img src="images/singers/Hailee-Steinfeld.jpg" title="Hailee Steinfeld" alt="Hailee Steinfeld"></a><a href="Hailee Steinfeld.html" class="name_singer_main" title="Hailee Steinfeld">Hailee Steinfeld</a></li>
+                                
+                                    <li><a href="Ina Wroldsen.html" class="img" title="Ina Wroldsen"><img src="images/singers/Ina-Wroldsen.jpg" title="Ina Wroldsen" alt="Ina Wroldsen"></a><a href="Ina Wroldsen.html" class="name_singer_main" title="Ina Wroldsen">Ina Wroldsen</a></li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--End box content-->
+
+        <!--A Begin box footer-->
+        <div class="footer">
+            <div class="wrap">
+                <div class="content-wrap">
+                    <h6>@2018 M.S.C Channel. All Rights Reserved | Design by BinhNguyen</h6>
+                    <div class="clr"></div>
+                </div>
+            </div>
+        </div>
+        <!--End box footer-->
+
+    </body>
+</html>

@@ -1,0 +1,145 @@
+/* vietnamese */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(../fonts/DK0eTGXiZjN6yA8zAEyM2fRMc6C39aem-aUPzsV2c2w.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(../fonts/DK0eTGXiZjN6yA8zAEyM2e87R-l0-Xx_7cYc0ZX1ifE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(../fonts/DK0eTGXiZjN6yA8zAEyM2Ud0sm1ffa_JvZxsF_BEwQk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body{
+  font-family: 'Dancing Script', cursive;
+  header{
+    background: #f1f1f1;
+    overflow: hidden;
+    .logo{
+      overflow: hidden;
+      h1{
+        float: left;
+        margin: 2px 15px 5px 0px;
+        img{
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .menu{
+        margin: 0px 0px 0px 15px;
+        float: left;
+        a:link, a:visited {
+          color: #000;
+          padding: 14px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 25px;
+        }
+        .active{
+          background-color: #fff;
+        }
+      }
+      .search{
+        float: left;
+        margin: 12px 0px 12px 50px;
+        input{
+          border: 1px solid rgb(174, 174, 174);
+          border-radius: 3px;
+          padding: 7px 83px 7px 38px;    
+          width: 400px;
+        }
+        img{
+          position: absolute;
+          margin: -31px 0px 0px 9px;
+        }
+        button{
+          position: absolute;
+          margin: -37px 0px 0px 319px;
+          padding: 5px 20px;
+          background: #e91f1f;
+          border: 0;
+          color: #fff;
+        }
+      }
+      .follow{
+        float: right;
+        margin: 16px 10px;
+        a:link, a:visited{
+          float: left;
+          margin-left: 10px;
+        }
+        a:hover{
+          border-radius: 20px;
+          box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+        }
+      }
+    }
+  }
+  section{
+    .submenu{
+      border-bottom: 1px solid rgb(206, 206, 206);
+      ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+          display: inline-block;
+          padding: 10px 15px 10px 0px;
+          a:link, a:visited{
+            width: 100px;
+            color: #000;
+            font-size: 20px;
+            padding: 11px 20px;
+            text-decoration: none;
+            &:hover{
+              border-bottom: 2px solid rgb(245, 57, 57);
+            }
+          }
+          .active{
+            border-bottom: 2px solid rgb(245, 57, 57);
+          }
+        }
+      }
+    }
+    .content{
+      overflow: hidden;
+      padding: 0px;
+      .content_left{
+        float: left;
+        padding: 0px;
+        .slider{
+          margin: 15px 0px;
+          padding: 0px !important;
+          h3{
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+          }
+        }
+      }
+      .content_right{
+        float: left;
+        padding: 0px 0px 0px 50px;
+        .genres{
+          margin: 15px 0px;
+          img{
+            width: 324px; 
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
